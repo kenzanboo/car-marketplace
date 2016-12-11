@@ -1,9 +1,17 @@
 # Important Notes
 This is a sample project from my previous work. It is from a sunsetted project that is no longer used. Which is why I am able to share this as an exmple of my code. 
 
-This is car marketplace similar to eBay motors that allowed used to search and purchase new and used cars. We sourced the cars directly from partner dealerships. 
+This is car marketplace similar to eBay motors that allowed users to search and purchase new and used cars. We sourced the cars directly from partner dealerships. 
 
 The tech stack was ES7 > Node.js > React > Redux > Radium Inline CSS with a little SASS > Google Material Design
+
+![alt tag](http://i.imgur.com/SKVN0LM.jpg)
+
+![alt tag](http://i.imgur.com/SUWUlQ5.jpg)
+
+![alt tag](http://i.imgur.com/HL9QCcl.jpg)
+
+
 
 ## Running
 npm run build && npm run start-dev
