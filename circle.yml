@@ -1,0 +1,24 @@
+machine:
+  environment:
+    CIRCLECI: true
+  node:
+    version: 5.7.0
+
+dependencies:
+  cache_directories:
+    - node_modules
+  pre:
+    - npm install babel-cli -g
+
+test:
+  override:
+    - npm run lint
+    - npm test
+    - npm run intern
+
+deployment:
+  staging: # Automatically deploy staging when tests pass on master
+    branch: master
+    commands:
+      - git clone git@github.com:getprodigy/prodigy-deploy.git
+      - cd prodigy-deploy && bundle install && bundle exec cap market:staging deploy

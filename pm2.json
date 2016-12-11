@@ -1,0 +1,19 @@
+{
+  "apps"          : [{
+    "name"        : "market",
+    "script"      : "bin/server.js",
+    "cwd"         : "/home/node/market/current",
+    "env"         : {
+      "DEBUG"     : "market*",
+      "DEBUG_FD"  : "1",
+      "NODE_ENV"  : "production",
+      "NODE_PATH" : "$NODE_PATH:src",
+      "PORT"      : 4000,
+      "APIPORT"   : 8888
+    },
+    "merge_logs"  : true,
+    "error_file"  : "log/market.err.log",
+    "out_file"    : "log/market.out.log",
+    "pid_file"    : "tmp/pids/market.pid"
+  }]
+}

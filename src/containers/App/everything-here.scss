@@ -1,0 +1,35 @@
+
+/* this file is only used to accomodate third party CSS*/
+@import "../../../node_modules/react-image-gallery/src/image-gallery";
+
+body {margin: 0;}
+a {text-decoration: none;}
+/*
+#top-bar {
+  position: absolute;
+  width: 100%;
+}
+*/
+
+.image-gallery-image {
+  background: #FFF;
+  max-width: 640px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+.image-gallery-description {
+  background: rgba(0,0,0,.7) !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.image-gallery-slide img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-gallery-thumbnail.active img {
+  border: 4px solid rgb(120, 144, 156);
+}
